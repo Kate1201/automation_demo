@@ -1,0 +1,5 @@
+PyHamcrest==2.0.4
+pytest-bdd==6.1.1
+pytest==7.1.2
+selene==2.0.0rc3
+webdriver-manager-temp
