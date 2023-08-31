@@ -17,3 +17,4 @@ REGION = get("REGION", "United States")  # China, Ukraine, United States
 
 LOCALE_CODE = {"EN": "en,en_US", "CHI": "zh-cn,zh_CN", "ES": "es,es_ES", "DE": "de,de_DE", "FR": "fr,fr_FR"}
 URL = "https://makeup.com.ua/"
+URL_REDDIT = "https://www.reddit.com/"

@@ -12,12 +12,14 @@ class Driver:
         options = webdriver.ChromeOptions()
         options.add_argument("--window-size=1920,1080")
         options.add_experimental_option("prefs", {"intl.accept_languages": LOCALE_CODE[LANGUAGE]})
+        options.set_capability("selenoid:options", {'enableVideo': True})
         self.kwgs["options"] = options
         if BROWSER == "chrome":
             self.kwgs["service"] = Service(ChromeDriverManager().install())
 
         elif BROWSER == "remote":
-            self.kwgs["command_executor"] = "http://selenium:4444/wd/hub"
+            self.kwgs["command_executor"] = "http://54.39.83.141:4444/wd/hub"
+
 
     def start(self):
         driver = browsers[BROWSER](**self.kwgs)
